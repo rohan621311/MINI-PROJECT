@@ -2,7 +2,7 @@ export const singlebed=[
     {
         "id":"1",
         "title":"Enkel Solid Wood King Size Bed in Provincial Teak Finish",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1556216299893.jpg?alt=media&token=34a22651-fb1b-4515-b099-0b6b56cc8eb1",
+        "image":"/assets/images/1556216299893.jpg",
         "price":"₹23,999.00",
         "brand":"Woodsworth",
         "colour":"Provincial Teak",
@@ -14,7 +14,7 @@ export const singlebed=[
     {
         "id":"2",
         "title":"Takai Queen Size Bed in Wenge Finish",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1554915629983.jpg?alt=media&token=ceb02046-96ea-4488-b7f8-a943ed0804d8",
+        "image":"/assets/images/1554915629983.jpg",
         "price":"₹6,999.00",
         "brand":"Takai",
         "colour":"Brown",
@@ -26,7 +26,7 @@ export const singlebed=[
     {
         "id":"3",
         "title":"Kimura King Size Bed in Teak Finish        ",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1554915743238.jpg?alt=media&token=ca0d4fec-fb04-4989-b775-aad463d35dd1",
+        "image":"/assets/images/1554915743238.jpg",
         "price":"₹12,399.00",
         "brand":"Kimura",
         "colour":"Brown",
@@ -38,7 +38,7 @@ export const singlebed=[
     {
         "id":"4",
         "title":"Kryss King Size Bed with Drawer Storage in Rustic Teak Finish        ",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1556216055946.jpg?alt=media&token=61a5b9ca-5a08-47af-a021-5cf524eded4a",
+        "image":"/assets/images/1556216055946.jpg",
         "price":"₹27,499.00",
         "brand":"Woodsworth        ",
         "colour":"Rustic Teak        ",
@@ -50,7 +50,7 @@ export const singlebed=[
     {
         "id":"5",
         "title":"Toya Queen Size Bed with Drawer Storage in Walnut Finish        ",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1554915450086.jpg?alt=media&token=8708bcf9-1516-4692-8b97-d47fd0bc26be",
+        "image":"/assets/images/1554915450086.jpg",
         "price":"₹14,999.00",
         "brand":"Toya        ",
         "colour":"Dark Brown        ",
@@ -62,7 +62,7 @@ export const singlebed=[
     {
         "id":"6",
         "title":"Harleston Solid Wood King Size Poster Bed in Honey Oak Finish     ",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1554915935407.jpg?alt=media&token=08e84f81-7742-408f-a6d4-fa75b7022cc7",
+        "image":"/assets/images/1554915935407.jpg",
         "price":"₹29,999.00",
         "brand":"Amberville        ",
         "colour":"Honey Oak        ",
@@ -74,7 +74,7 @@ export const singlebed=[
     {
         "id":"7",
         "title":"Krisa Solid Wood Queen Size Bed in Honey Oak Finish        ",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1554915527613.jpg?alt=media&token=788d9c56-890c-4397-b7db-94fce0269ec8",
+        "image":"/assets/images/1554915527613.jpg",
         "price":"₹28,999.00",
         "brand":"Mudramark        ",
         "colour":"Honey Oak        ",
@@ -86,7 +86,7 @@ export const singlebed=[
     {
         "id":"8",
         "title":"Trego Solid Wood King Size Bed in Rustic Teak Finish        ",
-        "image":"https://firebasestorage.googleapis.com/v0/b/furniture-shopping-0311.appspot.com/o/image%2F1554915867582.jpg?alt=media&token=fd74a384-2bf9-46c8-ac36-3c3f1f7eccea",
+        "image":"/assets/images/1554915867582.jpg",
         "price":"₹24,999.00",
         "brand":"Woodsworth        ",
         "colour":"Rustic Teak        ",

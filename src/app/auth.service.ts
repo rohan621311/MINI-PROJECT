@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from '@angular/fire/auth';
+import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from '@angular/fire/auth';
 import{AngularFireAuth} from '@angular/fire/compat/auth'
 import { Router } from '@angular/router';
 @Injectable({
@@ -34,4 +34,14 @@ signup(data: any) {
       alert(err.message)
     })
 }
+
+logout() {
+    signOut(this.auth)
+      .then(() => {
+        this.router.navigate([''])
+      })
+      .catch((err) => {
+        console.log(err.message)
+      })
+  }
 }
