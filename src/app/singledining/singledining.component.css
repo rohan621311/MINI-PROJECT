@@ -1,0 +1,30 @@
+.col-lg img{
+    width: 300px;
+    height: 400px;
+    padding-top: 1.5rem;
+
+}
+
+.text-center p{
+    text-align: left;
+}
+
+.text-center h2{
+    text-align: center;
+}
+
+.col-lg h3{
+    text-align: left;
+}
+
+.text{
+    padding-top: 2.5rem;
+}  
+
+.text h1{
+    text-align: left;
+}
+
+.text a{
+    float: left;
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "furniture-bd575": {
+      "hosting": {
+        "furnitures": [
+          "furniture-bd575"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "furniture-bd575"
+  }
+}

@@ -51,7 +51,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -91,8 +97,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "furnitures:build:production",
+            "firebaseProject": "furniture-bd575",
+            "firebaseHostingSite": "furniture-bd575"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "88e7e835-ea16-4ef4-b916-2dce044fcf23"
   }
 }

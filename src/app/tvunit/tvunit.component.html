@@ -1,0 +1,14 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-lg-4" *ngFor="let item of tvunit">
+    <div class="card" style="width: 19rem; margin-bottom: 35px;">
+        <img width="auto" height="auto" src="{{item.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.tvunit}}</h5>
+          <h3 class="card-text" >{{item.price}}</h3>
+          <a (click)="gotoHere(item.id)" class="btn btn-primary">VIEW PRODUCT</a>
+        </div>
+      </div>
+        </div>
+    </div>
+  </div>
