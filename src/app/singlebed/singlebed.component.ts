@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SinglebedService } from '../singlebed.service';
 import { Firestore,collection,addDoc,collectionData,doc,updateDoc,deleteDoc } from '@angular/fire/firestore';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-singlebed',
   templateUrl: './singlebed.component.html',
@@ -9,7 +11,7 @@ import { Firestore,collection,addDoc,collectionData,doc,updateDoc,deleteDoc } fr
 export class SinglebedComponent {
 
 singlebed:any;
-constructor(private Bed:SinglebedService,)
+constructor(private Bed:SinglebedService,private router:Router, private auth:AuthService)
 {
 }
 ngOnInit():void{
@@ -21,5 +23,17 @@ ngOnInit():void{
 
  
  }
+
+buynow(item:any){
+const details={
+  title:item.title,
+  img:item.image
+} 
+alert('details added')
+this.auth.buy(details)
+}
+
+
+
 }
 

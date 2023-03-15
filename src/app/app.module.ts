@@ -32,6 +32,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { PaymentComponent } from './payment/payment.component';
+import { NextbedComponent } from './nextbed/nextbed.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,8 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
     SingletvunitComponent,
     CartComponent,
     DashboardComponent,
+    PaymentComponent,
+    NextbedComponent,
   ],
   imports: [
     BrowserModule,

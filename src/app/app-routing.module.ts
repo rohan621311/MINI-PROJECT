@@ -18,6 +18,7 @@ import { SinglestudyComponent } from './singlestudy/singlestudy.component';
 import { SingletvunitComponent } from './singletvunit/singletvunit.component';
 import { CartComponent } from './cart/cart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 
@@ -40,7 +41,8 @@ const routes: Routes = [
  {path:'singlestudy/:id',component:SinglestudyComponent},
  {path:'singletvunit/:id',component:SingletvunitComponent},
  {path:'cart',component:CartComponent},
- {path:'dashboard',component:DashboardComponent}
+ {path:'dashboard',component:DashboardComponent},
+ {path:'payment',component:PaymentComponent}
  
 
 ];

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { singlebed } from '../singlebed';
 import { SinglebedService } from '../singlebed.service';
 
@@ -9,10 +10,10 @@ import { SinglebedService } from '../singlebed.service';
 })
 export class SinglediningComponent {
   singledining:any;
-  constructor(private singlebed:SinglebedService)
+  constructor(private singlebed:SinglebedService,private router:Router)
   {
   
-  }
+}
   ngOnInit():void{
     let pageid=localStorage.getItem('id');
   
@@ -20,4 +21,5 @@ export class SinglediningComponent {
     this.singledining=singleDataArray.filter(d => d.id === pageid);
     console.log(this.singledining);
 }
+
 }

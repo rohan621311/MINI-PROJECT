@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { SinglebedService } from '../singlebed.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { SinglebedService } from '../singlebed.service';
 })
 export class SinglesofaComponent {
   singlesofa:any;
-  constructor(private singlebed:SinglebedService)
+  constructor(private singlebed:SinglebedService,private router:Router)
   {
   
   }
@@ -20,4 +21,5 @@ export class SinglesofaComponent {
     console.log(this.singlesofa);
   
   }
+  
 }

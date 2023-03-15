@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from '@angular/fire/auth';
 import{AngularFireAuth} from '@angular/fire/compat/auth'
 import { Router } from '@angular/router';
+import { collection,Firestore,addDoc } from '@angular/fire/firestore';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private auth : Auth,private router:Router) { }
+  constructor(private auth : Auth,private router:Router ,private firestore: Firestore) { }
 
 
 signin(creds: any) {
@@ -44,4 +45,13 @@ logout() {
         console.log(err.message)
       })
   }
+
+
+  buy(details:any){
+const docRef=collection(this.firestore,"furnitures")
+addDoc(docRef, details).then(()=> alert('data added'))
+  }
+
+  
 }
+

@@ -150,7 +150,7 @@ export const studytable=[
  {    "id":"8",
       "studytable":"Tiber Solid Wood Study & Laptop Table with Chair in Premium Acacia Finish",
       "price":"₹25,999.00",
-      "image":"assets/images/1554918522039.jpg"
+      "image":"/assets/images/1554918522039.jpg"
     }
  
 ]
