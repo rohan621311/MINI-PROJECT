@@ -50,7 +50,7 @@ logout() {
 
   buy(details:any){
 const docRef=collection(this.firestore,"furnitures")
-addDoc(docRef, details).then(()=> alert('data added'))
+addDoc(docRef, details)
   }
 
   view(): Observable<any> {

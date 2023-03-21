@@ -28,7 +28,7 @@ export class SinglesofaComponent {
       img:item.image,
       price:item.price
     } 
-    alert('details added')
+    
     this.auth.buy(details)
     }
 }
