@@ -24,8 +24,7 @@ import { NextbedComponent } from './nextbed/nextbed.component';
 
 
 const routes: Routes = [
-  {path:'',component:SigninComponent},
-  {path:'home',component:HomeComponent},
+  {path:'',component:HomeComponent},
   {path:'signup',component:SignupComponent},
   {path:'signin',component:SigninComponent},
   {path:'contactus',component:ContactusComponent},
