@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { SinglebedService } from '../singlebed.service';
-
+import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-singlesofa',
   templateUrl: './singlesofa.component.html',
@@ -9,7 +9,7 @@ import { SinglebedService } from '../singlebed.service';
 })
 export class SinglesofaComponent {
   singlesofa:any;
-  constructor(private singlebed:SinglebedService,private router:Router)
+  constructor(private singlebed:SinglebedService,private router:Router ,private auth:AuthService)
   {
   
   }
@@ -22,4 +22,13 @@ export class SinglesofaComponent {
   
   }
   
+  buynow(item:any){
+    const details={
+      title:item.title,
+      img:item.image,
+      price:item.price
+    } 
+    alert('details added')
+    this.auth.buy(details)
+    }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { singlebed } from '../singlebed';
 import { SinglebedService } from '../singlebed.service';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-singledining',
@@ -10,7 +11,7 @@ import { SinglebedService } from '../singlebed.service';
 })
 export class SinglediningComponent {
   singledining:any;
-  constructor(private singlebed:SinglebedService,private router:Router)
+  constructor(private singlebed:SinglebedService,private router:Router, private auth:AuthService)
   {
   
 }
@@ -22,4 +23,13 @@ export class SinglediningComponent {
     console.log(this.singledining);
 }
 
+buynow(item:any){
+  const details={
+    title:item.title,
+    img:item.image,
+    price:item.price
+  } 
+  alert('details added')
+  this.auth.buy(details)
+  }
 }

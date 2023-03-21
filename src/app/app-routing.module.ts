@@ -19,6 +19,7 @@ import { SingletvunitComponent } from './singletvunit/singletvunit.component';
 import { CartComponent } from './cart/cart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PaymentComponent } from './payment/payment.component';
+import { NextbedComponent } from './nextbed/nextbed.component';
 
 
 
@@ -42,7 +43,8 @@ const routes: Routes = [
  {path:'singletvunit/:id',component:SingletvunitComponent},
  {path:'cart',component:CartComponent},
  {path:'dashboard',component:DashboardComponent},
- {path:'payment',component:PaymentComponent}
+ {path:'payment',component:PaymentComponent},
+ {path:'nextbed',component:NextbedComponent}
  
 
 ];

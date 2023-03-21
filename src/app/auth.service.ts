@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from '@angular/fire/auth';
 import{AngularFireAuth} from '@angular/fire/compat/auth'
 import { Router } from '@angular/router';
-import { collection,Firestore,addDoc } from '@angular/fire/firestore';
+import { collection,Firestore,addDoc, collectionData, deleteDoc, doc } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -52,6 +53,17 @@ const docRef=collection(this.firestore,"furnitures")
 addDoc(docRef, details).then(()=> alert('data added'))
   }
 
+  view(): Observable<any> {
+    const collectionInstance = collection(this.firestore, "furnitures")
+    return collectionData(collectionInstance, { idField: 'id' })
+    
+
+  }
   
+
+  delete(id: any) {
+    const docRef = doc(this.firestore, "furnitures", id)
+    deleteDoc(docRef)
+  }
 }
 

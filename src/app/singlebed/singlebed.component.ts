@@ -27,7 +27,8 @@ ngOnInit():void{
 buynow(item:any){
 const details={
   title:item.title,
-  img:item.image
+  img:item.image,
+  price:item.price
 } 
 alert('details added')
 this.auth.buy(details)

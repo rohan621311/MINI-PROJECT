@@ -1,1 +1,14 @@
-<p>nextbed works!</p>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col col-lg-8" *ngFor="let item of data | async">
+      <div class="card" style="width: 80rem; height:3rem ; margin-bottom: 35px">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }} {{item.price}} <button routerLink="/payment">Buy Now </button> <button (click)="delete(item.id)">Delete </button></h5>
+          <div class="body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
